@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="346sp"
+        android:background="@drawable/shelf">
+
+        <RelativeLayout
+            android:id="@+id/glass1"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/flute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flute"
+                android:layout_marginTop="55sp"
+                android:layout_marginLeft="25sp"
+                android:scaleX="0.75"
+                android:scaleY="0.75"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/beer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/beer"
+                android:scaleY="1.05"
+                android:layout_marginLeft="18sp"
+                android:layout_toRightOf="@+id/flute"
+                android:layout_marginTop="76sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/highball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/highball"
+                android:layout_marginLeft="8sp"
+                android:layout_toRightOf="@+id/beer"
+                android:layout_marginTop="94sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/tall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tall"
+                android:layout_marginLeft="13sp"
+                android:layout_toRightOf="@+id/highball"
+                android:layout_marginTop="85sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/rocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rocks"
+                android:layout_marginLeft="13sp"
+                android:layout_toRightOf="@+id/tall"
+                android:layout_marginTop="115sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/wine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wine"
+                android:layout_marginLeft="25sp"
+                android:layout_below="@+id/flute"
+                android:layout_marginTop="10sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/shooter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shooter"
+                android:layout_marginLeft="25sp"
+                android:layout_below="@+id/beer"
+                android:layout_toRightOf="@id/wine"
+                android:layout_marginTop="89sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/shot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shot"
+                android:layout_marginLeft="25sp"
+                android:layout_below="@+id/highball"
+                android:layout_toRightOf="@id/shooter"
+                android:layout_marginTop="100sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/snifter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/snifter"
+                android:layout_marginLeft="25sp"
+                android:layout_below="@+id/highball"
+                android:layout_toRightOf="@id/shot"
+                android:layout_marginTop="60sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/pony"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pony"
+                android:layout_marginLeft="25sp"
+                android:layout_below="@+id/tall"
+                android:layout_toRightOf="@id/snifter"
+                android:layout_marginTop="33sp"
+                android:onClick="updateList"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/glass2"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/irish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/irish"
+                android:layout_marginTop="103sp"
+                android:layout_marginLeft="25sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/margarita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/margarita"
+                android:scaleY="1.05"
+                android:layout_marginLeft="21sp"
+                android:layout_toRightOf="@+id/irish"
+                android:layout_marginTop="96sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/mug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mug"
+                android:layout_marginLeft="16sp"
+                android:layout_toRightOf="@+id/margarita"
+                android:layout_marginTop="118sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/up"
+                android:layout_marginLeft="16sp"
+                android:layout_toRightOf="@+id/mug"
+                android:layout_marginTop="95sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/vodka"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/citron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/absolutcitron"
+                android:layout_marginTop="80sp"
+                android:layout_marginLeft="50sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/absoluteVanilla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/absolutvanilla"
+                android:layout_marginLeft="45sp"
+                android:layout_toRightOf="@+id/citron"
+                android:layout_marginTop="78sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/belvedere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/belvedere"
+                android:layout_marginLeft="45sp"
+                android:layout_toRightOf="@+id/absoluteVanilla"
+                android:layout_marginTop="70sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/finlandia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/finlandia"
+                android:layout_marginLeft="45sp"
+                android:layout_toRightOf="@+id/belvedere"
+                android:layout_marginTop="75sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/greygoose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/greygoose"
+                android:layout_marginLeft="55sp"
+                android:layout_below="@+id/citron"
+                android:layout_marginTop="20sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/ketelone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ketelone"
+                android:layout_marginLeft="49sp"
+                android:layout_below="@+id/absoluteVanilla"
+                android:layout_toRightOf="@id/greygoose"
+                android:layout_marginTop="23sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/smirnoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/smirnoff"
+                android:layout_marginLeft="48sp"
+                android:layout_below="@+id/absoluteVanilla"
+                android:layout_toRightOf="@id/ketelone"
+                android:layout_marginTop="23sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/stoli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stoli"
+                android:layout_marginLeft="50sp"
+                android:layout_below="@+id/absoluteVanilla"
+                android:layout_toRightOf="@id/smirnoff"
+                android:layout_marginTop="23sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/whiskey"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/canadianclub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/canadianclub"
+                android:layout_marginTop="69sp"
+                android:layout_marginLeft="80sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/crownroyal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/crownroyal"
+                android:layout_marginLeft="45sp"
+                android:layout_toRightOf="@+id/canadianclub"
+                android:layout_marginTop="98sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/jackdaniels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jackdaniels"
+                android:layout_marginLeft="45sp"
+                android:layout_toRightOf="@+id/crownroyal"
+                android:layout_marginTop="74sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/seagrams7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seagrams7"
+                android:layout_marginLeft="80sp"
+                android:layout_below="@+id/canadianclub"
+                android:layout_marginTop="22sp"/>
+
+            <ImageButton
+                android:id="@+id/seagramsvo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seagramsvo"
+                android:layout_marginLeft="46sp"
+                android:layout_below="@+id/crownroyal"
+                android:layout_toRightOf="@id/seagrams7"
+                android:layout_marginTop="24sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/windsorcanadian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/windsorcanadian"
+                android:layout_marginLeft="47sp"
+                android:layout_below="@+id/jackdaniels"
+                android:layout_toRightOf="@id/seagramsvo"
+                android:layout_marginTop="22sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tequila"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/cabowabo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cabowabo"
+                android:layout_marginTop="90sp"
+                android:layout_marginLeft="80sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/hornitos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hornitos"
+                android:layout_marginLeft="45sp"
+                android:layout_toRightOf="@+id/cabowabo"
+                android:layout_marginTop="77sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/josecuervo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/josecuervo"
+                android:layout_marginLeft="45sp"
+                android:layout_toRightOf="@+id/hornitos"
+                android:layout_marginTop="71sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/patronroca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/patronroca"
+                android:layout_marginLeft="74sp"
+                android:layout_below="@+id/cabowabo"
+                android:layout_marginTop="45sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/patron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/patron"
+                android:layout_marginLeft="31sp"
+                android:layout_below="@+id/hornitos"
+                android:layout_toRightOf="@id/patronroca"
+                android:layout_marginTop="49sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/sauza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sauza"
+                android:layout_marginLeft="36sp"
+                android:layout_below="@+id/josecuervo"
+                android:layout_toRightOf="@id/patron"
+                android:layout_marginTop="33sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/scotch"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/chivasregal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chivasregal"
+                android:layout_marginTop="77sp"
+                android:layout_marginLeft="80sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/dewars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dewars"
+                android:layout_marginLeft="45sp"
+                android:layout_toRightOf="@+id/chivasregal"
+                android:layout_marginTop="70sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/glenfiddich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/glenfiddich"
+                android:layout_marginLeft="45sp"
+                android:layout_toRightOf="@+id/dewars"
+                android:layout_marginTop="63sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/glenlivet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/glenlivet"
+                android:layout_marginLeft="50sp"
+                android:layout_below="@+id/chivasregal"
+                android:layout_marginTop="22sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/johnniewalker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/johnniewalker"
+                android:layout_marginLeft="46sp"
+                android:layout_below="@+id/chivasregal"
+                android:layout_toRightOf="@id/glenlivet"
+                android:layout_marginTop="12sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/lagavulin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lagavulin"
+                android:layout_marginLeft="47sp"
+                android:layout_below="@+id/dewars"
+                android:layout_toRightOf="@id/johnniewalker"
+                android:layout_marginTop="19sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/macallan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/macallan"
+                android:layout_marginLeft="47sp"
+                android:layout_below="@+id/glenfiddich"
+                android:layout_toRightOf="@id/lagavulin"
+                android:layout_marginTop="15sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rum"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/bacardi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bacardi"
+                android:layout_marginTop="69sp"
+                android:layout_marginLeft="100sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/captainmorgan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/captainmorgan"
+                android:layout_marginLeft="90sp"
+                android:layout_toRightOf="@+id/bacardi"
+                android:layout_marginTop="70sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/malibu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/malibu"
+                android:layout_marginLeft="50sp"
+                android:layout_below="@+id/bacardi"
+                android:layout_marginTop="25sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/myers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/myers"
+                android:layout_marginLeft="74sp"
+                android:layout_below="@+id/bacardi"
+                android:layout_toRightOf="@id/malibu"
+                android:layout_marginTop="28sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/parrotbay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/parrotbay"
+                android:layout_marginLeft="80sp"
+                android:layout_below="@+id/captainmorgan"
+                android:layout_toRightOf="@id/myers"
+                android:layout_marginTop="36sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mixers1"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/coke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/coke"
+                android:layout_marginTop="89sp"
+                android:layout_marginLeft="31sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/cranberry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cranberry"
+                android:layout_marginLeft="36sp"
+                android:layout_toRightOf="@+id/coke"
+                android:layout_marginTop="85sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/cream"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cream"
+                android:layout_marginLeft="36sp"
+                android:layout_toRightOf="@+id/cranberry"
+                android:layout_marginTop="79sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/espresso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/espresso"
+                android:layout_marginLeft="25sp"
+                android:layout_toRightOf="@+id/cream"
+                android:layout_marginTop="112sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/gingerale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gingerale"
+                android:layout_marginLeft="25sp"
+                android:layout_toRightOf="@+id/espresso"
+                android:layout_marginTop="80sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/gingerbeer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gingerbeer"
+                android:layout_marginLeft="25sp"
+                android:layout_below="@+id/coke"
+                android:layout_marginTop="32sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/grapefruit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grapefruit"
+                android:layout_marginLeft="25sp"
+                android:layout_below="@+id/cranberry"
+                android:layout_toRightOf="@id/gingerbeer"
+                android:layout_marginTop="35sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/orange"
+                android:layout_marginLeft="25sp"
+                android:layout_below="@+id/cream"
+                android:layout_toRightOf="@id/grapefruit"
+                android:layout_marginTop="34sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/pineapple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pineapple"
+                android:layout_marginLeft="25sp"
+                android:layout_below="@+id/cranberry"
+                android:layout_toRightOf="@id/orange"
+                android:layout_marginTop="32sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/sours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sours"
+                android:layout_marginLeft="25sp"
+                android:layout_below="@+id/cranberry"
+                android:layout_toRightOf="@id/pineapple"
+                android:layout_marginTop="34sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mixers2"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/sprite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sprite"
+                android:layout_marginTop="76sp"
+                android:layout_marginLeft="31sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/water"
+                android:layout_marginLeft="36sp"
+                android:layout_toRightOf="@+id/sprite"
+                android:layout_marginTop="81sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/coffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/coffeeroast"
+                android:layout_marginLeft="36sp"
+                android:layout_toRightOf="@+id/water"
+                android:layout_marginTop="75sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/irishwhiskey"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/jameson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jameson"
+                android:layout_marginTop="67sp"
+                android:layout_marginLeft="90sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/redbreast12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redbreast12"
+                android:layout_marginLeft="50sp"
+                android:layout_toRightOf="@+id/jameson"
+                android:layout_marginTop="80sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/tullamoredew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tullamoredew"
+                android:layout_marginLeft="45sp"
+                android:layout_toRightOf="@+id/redbreast12"
+                android:layout_marginTop="73sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/gin"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/beefeeter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/beefeeter"
+                android:layout_marginTop="75sp"
+                android:layout_marginLeft="87sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/bluecoat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bluecoat"
+                android:layout_marginLeft="60sp"
+                android:layout_toRightOf="@+id/beefeeter"
+                android:layout_marginTop="83sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/bombaysaphire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bombaysaphire"
+                android:layout_marginLeft="53sp"
+                android:layout_toRightOf="@+id/bluecoat"
+                android:layout_marginTop="82sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/boodles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boodles"
+                android:layout_marginLeft="40sp"
+                android:layout_below="@+id/beefeeter"
+                android:layout_marginTop="60sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/hendricks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hendricks"
+                android:layout_marginLeft="46sp"
+                android:layout_below="@+id/beefeeter"
+                android:layout_toRightOf="@id/boodles"
+                android:layout_marginTop="52sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/portobelloroad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/portobelloroad"
+                android:layout_marginLeft="47sp"
+                android:layout_below="@+id/beefeeter"
+                android:layout_toRightOf="@id/hendricks"
+                android:layout_marginTop="21sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/tanqueray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tanqueray"
+                android:layout_marginLeft="47sp"
+                android:layout_below="@+id/beefeeter"
+                android:layout_toRightOf="@id/portobelloroad"
+                android:layout_marginTop="34sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/garnish1"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/cherry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cherry"
+                android:layout_marginTop="105sp"
+                android:layout_marginLeft="28sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/onions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/onions"
+                android:layout_marginLeft="20sp"
+                android:layout_toRightOf="@+id/cherry"
+                android:layout_marginTop="92sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/beans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/coffee"
+                android:layout_marginLeft="26sp"
+                android:layout_toRightOf="@+id/onions"
+                android:layout_marginTop="143sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/lemontwist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lemontwist"
+                android:layout_marginLeft="12sp"
+                android:layout_toRightOf="@+id/beans"
+                android:layout_marginTop="138sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/lemon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lemon"
+                android:layout_marginLeft="15sp"
+                android:layout_toRightOf="@+id/lemontwist"
+                android:layout_marginTop="124sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/lime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lime"
+                android:layout_marginLeft="23sp"
+                android:layout_below="@+id/cherry"
+                android:layout_marginTop="93sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/margaritasalt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/margaritasalt"
+                android:layout_marginLeft="19sp"
+                android:layout_below="@+id/cherry"
+                android:layout_toRightOf="@id/lime"
+                android:layout_marginTop="100sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/mintleaf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mintleaf"
+                android:layout_marginLeft="20sp"
+                android:layout_below="@+id/cherry"
+                android:layout_toRightOf="@id/margaritasalt"
+                android:layout_marginTop="98sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/olives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/olives"
+                android:layout_marginLeft="10sp"
+                android:layout_below="@+id/cherry"
+                android:layout_toRightOf="@id/mintleaf"
+                android:layout_marginTop="110sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/orangecherry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/orangecherry"
+                android:layout_marginLeft="15sp"
+                android:layout_below="@+id/cherry"
+                android:layout_toRightOf="@id/olives"
+                android:layout_marginTop="65sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/garnish2"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/orangetwist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/orangetwist"
+                android:layout_marginTop="145sp"
+                android:layout_marginLeft="50sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/orangeslice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/orangeslice"
+                android:layout_marginLeft="30sp"
+                android:layout_toRightOf="@+id/orangetwist"
+                android:layout_marginTop="143sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/raspberry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/raspberry"
+                android:layout_marginLeft="50sp"
+                android:layout_below="@+id/orangetwist"
+                android:layout_marginTop="92sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/saltshaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/saltshaker"
+                android:layout_marginLeft="48sp"
+                android:layout_below="@+id/orangetwist"
+                android:layout_toRightOf="@id/raspberry"
+                android:layout_marginTop="82sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/flavorenhancers"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/bitters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bitters"
+                android:layout_marginTop="102sp"
+                android:layout_marginLeft="86sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/grenadine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grenadine"
+                android:layout_marginLeft="55sp"
+                android:layout_toRightOf="@+id/bitters"
+                android:layout_marginTop="76sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/honey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/honey"
+                android:layout_marginLeft="55sp"
+                android:layout_toRightOf="@+id/grenadine"
+                android:layout_marginTop="97sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/limejuice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/limejuice"
+                android:layout_marginLeft="83sp"
+                android:layout_below="@+id/bitters"
+                android:layout_marginTop="42sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/simplesyrup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/simplesyrup"
+                android:layout_marginLeft="53sp"
+                android:layout_below="@+id/honey"
+                android:layout_toRightOf="@id/limejuice"
+                android:layout_marginTop="37sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/soda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/soda"
+                android:layout_marginLeft="60sp"
+                android:layout_below="@+id/honey"
+                android:layout_toRightOf="@id/simplesyrup"
+                android:layout_marginTop="32sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cordials1"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/amaretto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/amarettodisaronno"
+                android:layout_marginTop="81sp"
+                android:layout_marginLeft="32sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/baileys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baileys"
+                android:layout_marginLeft="25sp"
+                android:layout_toRightOf="@+id/amaretto"
+                android:layout_marginTop="80sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/bluecuracao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bluecuracao"
+                android:layout_marginLeft="26sp"
+                android:layout_toRightOf="@+id/baileys"
+                android:layout_marginTop="71sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/chambord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chambord"
+                android:layout_marginLeft="25sp"
+                android:layout_toRightOf="@+id/bluecuracao"
+                android:layout_marginTop="99sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/cremedementhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cremedementhe"
+                android:layout_marginLeft="25sp"
+                android:layout_toRightOf="@+id/chambord"
+                android:layout_marginTop="68sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/frangelico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frangelico"
+                android:layout_marginLeft="38sp"
+                android:layout_below="@+id/cremedementhe"
+                android:layout_marginTop="22sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/goldschlager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/goldschlager"
+                android:layout_marginLeft="22sp"
+                android:layout_below="@+id/amaretto"
+                android:layout_toRightOf="@id/frangelico"
+                android:layout_marginTop="43sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/grandmarnier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grandmarnier"
+                android:layout_marginLeft="17sp"
+                android:layout_below="@+id/amaretto"
+                android:layout_toRightOf="@id/goldschlager"
+                android:layout_marginTop="45sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/jagermeister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jagermeister"
+                android:layout_marginLeft="17sp"
+                android:layout_below="@+id/amaretto"
+                android:layout_toRightOf="@id/grandmarnier"
+                android:layout_marginTop="40sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/kahlua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kahlua"
+                android:layout_marginLeft="32sp"
+                android:layout_below="@+id/amaretto"
+                android:layout_toRightOf="@id/jagermeister"
+                android:layout_marginTop="26sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cordials2"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/midori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/midori"
+                android:layout_marginTop="69sp"
+                android:layout_marginLeft="36sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/peachschnapps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/peachschnapps"
+                android:layout_marginLeft="38sp"
+                android:layout_toRightOf="@+id/midori"
+                android:layout_marginTop="70sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/southerncomfort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/southerncomfort"
+                android:layout_marginLeft="35sp"
+                android:layout_toRightOf="@+id/peachschnapps"
+                android:layout_marginTop="69sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/cointreau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cointreau"
+                android:layout_marginLeft="28sp"
+                android:layout_toRightOf="@+id/southerncomfort"
+                android:layout_marginTop="74sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/applepucker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/applepucker"
+                android:layout_marginLeft="24sp"
+                android:layout_toRightOf="@+id/cointreau"
+                android:layout_marginTop="68sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/peppermintschnapps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/peppermintschnapps"
+                android:layout_marginLeft="31sp"
+                android:layout_below="@+id/peachschnapps"
+                android:layout_marginTop="19sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/sloegin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sloegin"
+                android:layout_marginLeft="22sp"
+                android:layout_below="@+id/peachschnapps"
+                android:layout_toRightOf="@id/peppermintschnapps"
+                android:layout_marginTop="31sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/triplesec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/triplesec"
+                android:layout_marginLeft="22sp"
+                android:layout_below="@+id/peachschnapps"
+                android:layout_toRightOf="@id/sloegin"
+                android:layout_marginTop="29sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/drambuie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drambuie"
+                android:layout_marginLeft="27sp"
+                android:layout_below="@+id/peachschnapps"
+                android:layout_toRightOf="@id/triplesec"
+                android:layout_marginTop="29sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/campari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/campari"
+                android:layout_marginLeft="22sp"
+                android:layout_below="@+id/peachschnapps"
+                android:layout_toRightOf="@id/drambuie"
+                android:layout_marginTop="18sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cognac"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/courvoisier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/courvoisier"
+                android:layout_marginTop="71sp"
+                android:layout_marginLeft="100sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/hennessy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hennessy"
+                android:layout_marginLeft="90sp"
+                android:layout_toRightOf="@+id/courvoisier"
+                android:layout_marginTop="67sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/louisxiii"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/louisxiii"
+                android:layout_marginLeft="94sp"
+                android:layout_below="@+id/courvoisier"
+                android:layout_marginTop="43sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/remymartin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/remymartin"
+                android:layout_marginLeft="89sp"
+                android:layout_below="@+id/hennessy"
+                android:layout_toRightOf="@id/louisxiii"
+                android:layout_marginTop="15sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/brandy"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/christianbrothers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/christianbrothers"
+                android:layout_marginTop="69sp"
+                android:layout_marginLeft="60sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/ej"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ej"
+                android:layout_marginLeft="50sp"
+                android:layout_toRightOf="@+id/christianbrothers"
+                android:layout_marginTop="72sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/vecchiaromagna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vecchiaromagna"
+                android:layout_marginLeft="45sp"
+                android:layout_toRightOf="@+id/ej"
+                android:layout_marginTop="86sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bourbon"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/angelsenvy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/angelsenvy"
+                android:layout_marginTop="70sp"
+                android:layout_marginLeft="79sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/jimbeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jimbeam"
+                android:layout_marginLeft="55sp"
+                android:layout_toRightOf="@+id/angelsenvy"
+                android:layout_marginTop="70sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/knobcreek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/knobcreek"
+                android:layout_marginLeft="43sp"
+                android:layout_toRightOf="@+id/jimbeam"
+                android:layout_marginTop="80sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/makersmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/makersmark"
+                android:layout_marginLeft="29sp"
+                android:layout_below="@+id/angelsenvy"
+                android:layout_marginTop="20sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/oldgranddad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/oldgranddad"
+                android:layout_marginLeft="40sp"
+                android:layout_below="@+id/angelsenvy"
+                android:layout_toRightOf="@id/makersmark"
+                android:layout_marginTop="27sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/wildturkey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wildturkey"
+                android:layout_marginLeft="40sp"
+                android:layout_below="@+id/angelsenvy"
+                android:layout_toRightOf="@id/oldgranddad"
+                android:layout_marginTop="28sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/woodfordreserve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/woodfordreserve"
+                android:layout_marginLeft="40sp"
+                android:layout_below="@+id/angelsenvy"
+                android:layout_toRightOf="@id/wildturkey"
+                android:layout_marginTop="17sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/aperitif"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/sweetvermouth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/svermouth"
+                android:layout_marginTop="69sp"
+                android:layout_marginLeft="100sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/dryvermouth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dvermouth"
+                android:layout_marginLeft="90sp"
+                android:layout_toRightOf="@+id/sweetvermouth"
+                android:layout_marginTop="65sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/redwine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cabernet"
+                android:layout_marginLeft="50sp"
+                android:layout_below="@+id/sweetvermouth"
+                android:layout_marginTop="13sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/whitewine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pinotgrigio"
+                android:layout_marginLeft="74sp"
+                android:layout_below="@+id/sweetvermouth"
+                android:layout_toRightOf="@id/redwine"
+                android:layout_marginTop="18sp"
+                android:onClick="updateList"/>
+
+            <ImageButton
+                android:id="@+id/champagne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/champagne"
+                android:layout_marginLeft="80sp"
+                android:layout_below="@+id/sweetvermouth"
+                android:layout_toRightOf="@id/whitewine"
+                android:layout_marginTop="25sp"
+                android:onClick="updateList"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left"
+            android:layout_alignParentLeft="true"
+            android:onClick="moveLeft"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/right"
+            android:layout_alignParentRight="true"
+            android:onClick="moveRight"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/drink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Washington Apple"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#4c4c4c"
+        android:gravity="center_horizontal"/>
+
+    <ImageButton
+        android:id="@+id/checklist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notebook"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:onClick="check"/>
+
+</LinearLayout>

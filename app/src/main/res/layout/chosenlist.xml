@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:background="@drawable/dialog">
+
+    <RelativeLayout
+        android:id="@+id/current"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Currently Chosen"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <ScrollView
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/list"
+        android:layout_width="500px"
+        android:layout_height="500px">
+
+        <TextView
+            android:id="@+id/chosen"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+    </ScrollView>
+
+    <Button
+        android:layout_marginBottom="15sp"
+        android:id="@+id/submitBut"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:onClick="submit"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/resultbox"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CORRECT"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+        <ScrollView
+            android:layout_below="@+id/result"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/answerList"
+            android:layout_width="500px"
+            android:layout_height="500px">
+
+            <TextView
+                android:id="@+id/answer"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+        </ScrollView>
+
+        <Button
+            android:layout_marginBottom="15sp"
+            android:id="@+id/next"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerList"
+            android:layout_centerHorizontal="true"
+            android:text="OK"/>
+    </RelativeLayout>
+
+</RelativeLayout>
